@@ -1,0 +1,6 @@
+package RestaurantBillingSystem;
+
+public class RestaurantManagementSystem {
+
+	
+}

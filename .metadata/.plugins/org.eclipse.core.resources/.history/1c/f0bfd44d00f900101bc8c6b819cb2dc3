@@ -1,0 +1,38 @@
+//Given an array nums, return an array where each element is the product of all other elements.
+//
+//Example:
+//Input: [1,2,3,4]
+//Output: [24,12,8,6]
+
+package Test_24_1_26;
+import java.util.*;
+
+public class ProductOfElements {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the size:");
+		int size=sc.nextInt();
+		int arr[]=new int[size];
+		System.out.println("Enter the elements:");
+		for(int i=0;i<size;i++) {
+			arr[i]=sc.nextInt();
+		}
+		int prod=1;
+		for(int i=0;i<size;i++) {
+			prod=1;
+			for(int j=0;j<size;j++) {
+				if(j!=i) {
+					prod*=j;
+				}				
+			}
+			arr[i]=prod;
+		}
+		
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+
+}

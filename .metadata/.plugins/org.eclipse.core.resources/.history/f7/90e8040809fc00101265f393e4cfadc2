@@ -1,0 +1,17 @@
+package RestaurantBillingSystem;
+import java.util.*;
+
+public abstract class Customer implements BillPayable {
+	
+	private int customerId;
+	private String name;
+	HashMap<Integer, Order> orderhistory=new HashMap<Integer, Order>();
+	
+	Customer(){
+		Order order=new Order();
+		
+		
+	}
+	
+
+}

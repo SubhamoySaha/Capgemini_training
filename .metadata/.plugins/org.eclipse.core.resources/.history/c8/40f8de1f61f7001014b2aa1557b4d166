@@ -1,0 +1,30 @@
+package exception_demo;
+
+public class Bank {
+	
+	public static double balance=10000;
+	
+	public static void debit(double amount) throws InvalidAmountException{
+		if(amount>balance) {
+			throw new InvalidAmountException_CheckedException("Amount is greater than balance");
+		}
+		else {
+			balance=balance-amount;
+			System.out.println("Amount Debited");
+		}
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Program started");
+		try {
+			debit(13000);
+		}
+		
+		catch(InvalidAmountException_CheckedException e) {
+			System.out.println(a.getMessage());
+		}
+		
+		System.out.println("Program Ended");
+	}
+
+}

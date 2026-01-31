@@ -1,0 +1,8 @@
+package exception_demo;
+
+public class InvalidPercenytageException extends RuntimeException{
+	
+	public InvalidPercentageException(String msg) {
+		super(msg);
+	}
+}

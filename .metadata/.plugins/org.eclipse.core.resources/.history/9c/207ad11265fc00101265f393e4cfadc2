@@ -1,0 +1,43 @@
+package Online_Banking_Transaction_System;
+
+interface Transactiontype{
+	public double Deposit();
+	public double Withdraw();
+}
+
+	
+
+public abstract class Account implements Transactiontype {
+
+	private long Account_Number;
+	private String Account_Holder_Name;
+	private String account_type;
+	private double Balance;
+	
+	
+	
+	Account(long Account_Number, String Account_Holder_Name, String account_type,double Balance)// throws InsufficientBalanceException
+	{
+		this.Account_Number=Account_Number;
+		this.Account_Holder_Name=Account_Holder_Name;
+		this.account_type=account_type;
+//		setBalance(Balance);
+	}
+	
+	public void setBalance(double Balance) throws InsufficientBalanceException{
+		if(Balance<=0) {
+			throw new InsufficientBalanceException("Your Balance is insufficient!");
+		}
+		
+		this.Balance=Balance;
+	}
+	
+	public double getBalance() {
+		return this.Balance;
+	}
+	
+	
+	
+	
+	
+}

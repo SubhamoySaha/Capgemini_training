@@ -1,0 +1,7 @@
+package exception_demo.checkedAndunchecked_combined;
+
+public class InvalidNameException extends Exception {
+	
+	
+
+}

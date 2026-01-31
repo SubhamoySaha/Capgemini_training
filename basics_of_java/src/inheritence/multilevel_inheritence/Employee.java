@@ -1,0 +1,20 @@
+package inheritence.multilevel_inheritence;
+
+public class Employee extends Person {
+
+	int id;
+	double salary;
+	
+	public Employee(int id,String name,double salary,int age) {
+		super(name,age);
+		this.id=id;
+		this.salary=salary;
+	}
+	
+	public void displayEmp() {
+		
+		displayPerson();
+		System.out.println(id);
+		System.out.println(salary);
+	}
+}

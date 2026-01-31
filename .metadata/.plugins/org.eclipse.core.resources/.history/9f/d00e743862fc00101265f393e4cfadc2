@@ -1,0 +1,24 @@
+package Online_Banking_Transaction_System;
+
+interface Transactiontype{
+	public int Deposit();
+	public int Withdraw();
+}
+
+public abstract class Account implements Transactiontype {
+
+	private long Account_Number;
+	private String Account_Holder_Name;
+	private String account_type;
+	private int Balance;
+	
+	Account(long Account_Number, String Account_Holder_Name, String account_type){
+		this.Account_Number=Account_Number;
+		this.Account_Holder_Name=Account_Holder_Name;
+		this.account_type=account_type;
+		
+	}
+	
+	
+	
+}

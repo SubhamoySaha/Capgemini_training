@@ -1,0 +1,45 @@
+package Tree_Set;
+
+import java.util.*;
+
+public class Employee_Caller {
+
+	public static void main(String[] args) {
+		TreeSet<Employee> ts=new TreeSet<Employee>();
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number of Employee: ");
+		int n=sc.nextInt();
+		sc.nextLine();
+		int id;
+		String name;
+		double Salary;
+		
+		for(int i=1;i<=n;i++) {
+			System.out.print("Id: ");
+			id=sc.nextInt();
+			sc.nextLine();
+			
+			System.out.print("Name: ");
+			name=sc.nextLine();
+
+			System.out.print("Salary: ");
+			Salary=sc.nextDouble();
+			sc.nextLine();
+			
+			ts.add(new Employee(id,name,Salary));
+		}
+//		Employee e1=new Employee(1,"A",500);
+//		Employee e2=new Employee(1,"D",50000);
+//		Employee e3=new Employee(3,"A",500);
+//		Employee e4=new Employee(4,"B",1000);
+//		Employee e5=new Employee(5,"E",500);
+//	
+//		ts.add(e1);
+//		ts.add(e2);
+//		ts.add(e3);
+//		ts.add(e4);
+//		ts.add(e5);
+	
+		System.out.println(ts);
+	}
+}

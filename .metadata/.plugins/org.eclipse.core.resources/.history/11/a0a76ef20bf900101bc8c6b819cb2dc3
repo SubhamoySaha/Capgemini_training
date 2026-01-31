@@ -1,0 +1,51 @@
+package Test_24_1_26;
+
+abstract class AbstractC {
+    AbstractC() {
+        System.out.print("Abstract ");
+    }
+    abstract void show();
+}
+
+class ConcreteC extends AbstractC {
+    ConcreteC() {
+        System.out.print("Concrete ");
+    }
+    void show() {
+        System.out.print("Show");
+    }
+}
+
+public class Test3 {
+	
+	 //public static void main(String[] args) {
+//	        int x = 10;
+//	        change(x);
+//	        System.out.println(x);
+//	    }
+//
+//	    static void change(int x) {
+//	        x = x + 5;
+//	        modify(x);
+//	    }
+//
+//	    static void modify(int x) {
+//	        x = x * 2;
+//	    }
+
+//		    public static void main(String[] args) {
+//		        int i = 0;
+//		        int sum = 0;
+//
+//		        while (i < 5) {
+//		            sum += i++;
+//		            sum += ++i;
+//		        }
+//		        System.out.println(sum);
+//		    }
+	
+	public static void main(String[] args) {
+        ConcreteC obj = new ConcreteC();
+        obj.show();
+    }
+}

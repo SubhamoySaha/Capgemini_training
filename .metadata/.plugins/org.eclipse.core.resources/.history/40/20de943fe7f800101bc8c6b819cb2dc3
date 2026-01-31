@@ -1,0 +1,32 @@
+package arraylist;
+
+import java.util.ArrayList;
+
+public class Student {
+
+	int id;
+	String name;
+	double Perc
+	
+	public void Student(int id,String name,double Perc){
+		this.id=id;
+		this.name=name;
+		this.Perc=Perc;
+	}
+	
+	@Override
+	public String toString() {
+		return "ID-> "+id+" Name-> "+name;
+	}
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Student> list=new ArrayList<>();
+		list.add(new Student(1,"ABC",40.0));
+		list.add(new Student(2,"BC",30.0));
+		list.add(new Student(3,"C",60.0));
+		list.add(new Student(4,"CBA",80.0));
+			
+		System.out.println(list);
+	}
+}

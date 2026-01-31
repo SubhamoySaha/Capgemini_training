@@ -1,0 +1,39 @@
+package Online_Banking_Transaction_System;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Account p1=new Savings(2441129,"Henry");
+		Account p2=new Current(2441139,"Rich");
+		try {
+		p1.Deposit(2000);
+		p1.Deposit(4000);
+		}
+		
+		catch(InsufficientBalanceException e){
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			p1.Withdraw(500);
+		}
+		
+		catch(InsufficientBalanceException e){
+			System.out.println(e.getMessage());
+		}
+		
+		System.out.println(p1.getDetails());
+		
+		
+		try {
+			p2.Withdraw(500);
+		}
+		
+		catch(InsufficientBalanceException e){
+			System.out.println(e.getMessage());
+		}
+			System.out.println(p1.getDetails());
+		
+	}
+}

@@ -1,0 +1,22 @@
+package Test_24_1_26;
+
+public class Test {
+//	   public static void main(String[] args) {
+//	        Integer a = 100;
+//	        Integer b = 100;
+//
+//	        System.out.println(a == b);
+//	    }
+	
+	
+    static int x;
+
+    static {
+        x = 10;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+    
+}
