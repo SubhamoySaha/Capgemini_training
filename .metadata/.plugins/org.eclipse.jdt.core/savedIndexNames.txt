@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+D:\Java Capgemini\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3801279809.index
-3322932688.index

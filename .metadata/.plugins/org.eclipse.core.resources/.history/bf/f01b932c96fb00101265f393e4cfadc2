@@ -1,5 +1,0 @@
-package RestaurantBillingSystem;
-
-public interface BillPayable {
-
-}

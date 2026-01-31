@@ -1,7 +1,0 @@
-package RestaurantBillingSystem;
-
-public class UnauthorizedAccessException extends RuntimeException {
-	
-	
-
-}
